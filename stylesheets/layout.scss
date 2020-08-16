@@ -1,0 +1,36 @@
+/* -------------------------------------------------------------------------
+  Site layout and containers.
+---------------------------------------------------------------------------- */
+
+.inner {
+  margin: 0 auto;
+  padding: 20px 10px;
+  max-width: 800px;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .split {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.right {
+  text-align: right;
+}
+
+.development {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--mid-red);
+  color: var(--white);
+}
